@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 100px;
+            height: 1500px;
+        }
+        .color_btn {
+            border: 1px solid #000;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+        }
+        #white {
+            background: #fff;
+        }
+        #green {
+            background: green;
+        }
+        #red {
+            background: red;
+        }
+        #blue {
+            background: blue;
+        }
+        #black {
+            background: #000;
+        }
+      .color-swatches-box-sticky {
+        position: fixed;
+        top: 0;
+      }
+    </style>
+</head>
+<body>
+    <button id="btn-arrow-function" class="btn-arrow-function">Button arrow function</button>
+    <div id="color-swatches-box">
+        <span class="color_btn" id="white" onclick="bgcolor('#fff')"></span>
+        <span class="color_btn" id="green" onclick="bgcolor('green')"></span>
+        <span class="color_btn" id="red" onclick="bgcolor('red')"></span>
+        <span class="color_btn" id="blue" onclick="bgcolor('blue')"></span>
+        <span class="color_btn" id="black" onclick="bgcolor('#000')"></span>
+    </div>
+    <h1>Background color changer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quam possimus repudiandae sed doloribus. Saepe, dolores? Cumque natus quisquam doloremque corrupti nulla ut. Cum corporis deserunt, tempora accusamus assumenda soluta.</p>
+    <script>
+        function bgcolor(color){
+            document.body.style.backgroundColor = color;
+            if (color == '#000' ){
+                document.body.style.color = '#fff';
+            }else{
+                document.body.style.color = '#000';
+            }
+        }
+        window.addEventListener('scroll', function(){
+            let colorBox = document.getElementById('color-swatches-box');
+            if(window.pageYOffset >= 100){
+                colorBox.classList.add('color-swatches-box-sticky');
+            }else{
+                colorBox.classList.remove('color-swatches-box-sticky');
+            }
+        })
+        let btnarrow = document.getElementById('btn-arrow-function');
+        btnarrow.addEventListener('click', () => {
+            alert("Hello");
+        })
+    </script>
+</body>
+</html>
