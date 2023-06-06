@@ -19,3 +19,25 @@ let listNumNew2 = listNumNew.filter(function(x){
 });
 
 console.log(listNumNew2);
+
+let team = [
+   {
+      name: "Milapdeep singh",
+      position: "Developer"
+   },
+   {
+      name: "Jagtar singh",
+      position: "Developer"
+   },
+   {
+      name: "Simardeep",
+      position: "Teacher"
+   },
+   {
+      name: "Harpreet",
+      position: "Wordpress"
+   }
+]
+
+let dev = team.filter(d => d.position == 'Developer');
+console.log(dev);

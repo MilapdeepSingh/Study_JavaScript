@@ -1,0 +1,16 @@
+{
+    "student": [
+        {
+            "name": "Milapdeep singh",
+            "Age": 30
+        },
+        {
+            "name": "Jagtar singh",
+            "Age": 33
+        },
+        {
+            "name": "Harpreet kaur",
+            "Age": 30
+        }
+    ]
+}

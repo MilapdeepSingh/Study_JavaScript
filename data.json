@@ -1,0 +1,13 @@
+{
+    "name": "Milapdee Singh",
+    "age": 30,
+    "is_student": true,
+    "Passport_no": null,
+    "p_lang": ["JavaScript", "Liquid", "PHP"],
+    "address":{
+        "city": "Amritsar",
+        "State": "Punjab",
+        "Pincode": 143149
+    }
+
+}

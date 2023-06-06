@@ -13,3 +13,4 @@ class emp {
 
 let emp1 = new emp("Milapdeep Singh");
 console.log(emp1.pubfun());
+
